@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rumah Tanpa Suara</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+    }
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+    }
+    nav {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+    }
+    nav button {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 4px;
+      user-select: none;
+    }
+    nav button:hover {
+      background-color: #555;
+    }
+    main {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.8;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    #jumpscare {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: black url('https://i.ibb.co/3hGp6Wy/jumpscare.png') center center no-repeat;
+      background-size: contain;
+      display: none;
+      z-index: 9999;
+    }
+    .btn-pindah {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .btn-pindah button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background-color: #444;
+      color: #eee;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      user-select: none;
+      transition: background-color 0.3s;
+    }
+    .btn-pindah button:hover:not(:disabled) {
+      background-color: #666;
+    }
+    .btn-pindah button:disabled {
+      background-color: #222;
+      cursor: not-allowed;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="jumpscare"></div>
+
+  <header>
+    <h1>Rumah Tanpa Suara</h1>
+    <p>Kisah horor penuh misteri dan suara dari dunia lain...</p>
+  </header>
+
+  <nav>
+    <button onclick="scrollToSection('bab1')">Bab 1</button>
+    <button onclick="scrollToSection('bab2')">Bab 2</button>
+    <button onclick="scrollToSection('bab3')">Bab 3</button>
+    <button onclick="scrollToSection('bab4')">Bab 4</button>
+    <button onclick="scrollToSection('bab5')">Bab 5</button>
+    <button onclick="scrollToSection('bab6')">Bab 6</button>
+    <button onclick="scrollToSection('bab7')">Bab 7</button>
+    <button onclick="scrollToSection('bab8')">Bab 8</button>
+    <button onclick="scrollToSection('bab9')">Bab 9</button>
+    <button onclick="scrollToSection('bab10')">Bab 10</button>
+    <button onclick="scrollToSection('bab11')">Bab 11</button>
+    <button onclick="scrollToSection('bab12')">Bab 12</button>
+    <button onclick="scrollToSection('bab13')">Bab 13</button>
+    <button onclick="scrollToSection('bab14')">Bab 14</button>
+    <button onclick="scrollToSection('bab15')">Bab 15</button>
+    <button onclick="scrollToSection('bab16')">Bab 16</button>
+  </nav>
+
+  <main>
+    <section id="bab1">
+      <h2>Bab 1: Desa yang Terlupakan</h2>
+      <p>
+        Rafa memandangi desa kecil itu dari balik jendela bus yang mulai berhenti. Jalanan berbatu, pepohonan lebat mengitari, dan kabut tipis menjalari atap-atap rumah. Di sana, dia merasa waktu seakan berhenti, jauh dari hiruk-pikuk kota tempat ia tinggal.
+
+        Ia menuruni bus dengan tas kecil yang berisi pakaian dan sebuah peta usang. Misi Rafa jelas: menemukan Dika, adiknya, yang menghilang tanpa jejak sejak tiga minggu lalu.
+
+        Penduduk desa yang ditemuinya cuma mengangkat bahu atau berbisik-bisik saat ia menyebut rumah tua yang tak pernah mengeluarkan suara.
+
+        “Rumah Tanpa Suara,” kata seorang pria tua sambil menatap rumah besar di ujung jalan. “Jangan masuk ke sana. Jika kamu masuk, suara akan hilang. Dan kamu juga…”
+
+        Rafa menelan ludah. Tidak ada pilihan lain. Ia harus masuk ke rumah itu. Karena hanya di sana, jejak Dika bisa ditemukan.
+      </p>
+      <div class="btn-pindah">
+        <button disabled>Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab2')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab2">
+      <h2>Bab 2: Pintu yang Membuka Keheningan</h2>
+      <p>
+        Pintu rumah tua itu berat dan penuh debu. Ketika Rafa mendorongnya, suara berderit samar terdengar, tapi segera teredam oleh hampa udara yang menyelimuti rumah.
+
+        Begitu masuk, keheningan yang tidak wajar menyambut. Rafa menoleh ke Lina dan Arman, dua temannya yang setuju ikut menemaninya.
+
+        “Sunyi sekali,” kata Lina. Tapi itu bukan sunyi biasa, melainkan keheningan yang seperti menekan.
+
+        Langkah mereka nyaris tidak bersuara, dan udara terasa dingin menusuk meski hari cerah. Di sudut ruang tamu, foto keluarga dengan wajah yang seolah menyimpan kesedihan mendalam terpajang, penuh debu.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab1')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab3')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab3">
+      <h2>Bab 3: Langkah Tanpa Jejak</h2>
+      <p>
+        Mereka mulai menjelajah rumah. Tiap lantai kayu berderit tanpa suara. Langit-langit tinggi menyimpan bayangan-bayangan gelap yang bergerak saat sudut mata menangkapnya.
+
+        Tiba-tiba, terdengar suara langkah kaki di atas. Tapi saat mereka menengok, lorong kosong. Rafa merasa ada sesuatu yang mengawasi mereka.
+
+        Lina menggenggam tangan Rafa erat-erat. “Kita keluar saja, Rafa. Ini tidak benar.”
+
+        Tapi pintu utama yang tadi mereka masuki sudah terkunci dari luar. Mereka terperangkap.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab2')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab4')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab4">
+      <h2>Bab 4: Buku Harian yang Berbisik</h2>
+      <p>
+        Di sebuah kamar tua yang penuh debu, Rafa menemukan buku harian yang nyaris hancur. Halaman-halamannya penuh coretan dan catatan tentang keluarga yang tinggal di rumah itu bertahun-tahun lalu.
+
+        Catatan terakhir bercerita tentang kutukan: setiap orang yang masuk ke rumah ini akan kehilangan suaranya dan jiwanya terperangkap dalam keheningan.
+
+        Rafa membaca dengan suara pelan, tapi ia merasa bisikan lembut mengikuti kata-katanya, seperti suara-suara hantu yang merintih.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab3')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab5')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab5">
+      <h2>Bab 5: Suara yang Menghilang</h2>
+      <p>
+        Mereka mulai merasakan mulut mereka kaku, tidak mampu mengucapkan sepatah kata pun. Jeritan yang hendak keluar malah berubah jadi udara hampa.
+
+        Tiba-tiba, jeritan mencekam datang dari ruang bawah tanah. Mereka bergegas turun dan menemukan Dika, wajahnya kosong dan tubuhnya gemetar.
+
+        Tapi ia tak bisa berbicara, mulutnya terkunci oleh kekuatan yang tak terlihat.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab4')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab6')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab6">
+      <h2>Bab 6: Kutukan Gelap</h2>
+      <p>
+        Dika berusaha menuliskan sesuatu pada dinding, tanda-tanda samar yang tampak seperti mantra kuno.
+
+        Rafa dan teman-temannya mulai membaca mantra dari buku harian itu, berharap bisa memecahkan kutukan.
+
+        Tapi setiap kali mereka mengucapkannya, bayangan hitam muncul lebih banyak dan suara-suara aneh mulai memenuhi rumah.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab5')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab7')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab7">
+      <h2>Bab 7: Malam yang Panjang</h2>
+      <p>
+        Malam turun, dan suasana semakin mencekam. Lampu-lampu di rumah mati satu per satu, digantikan oleh cahaya aneh yang berwarna merah darah.
+
+        Teriakan tanpa suara bergaung di lorong-lorong, dan sosok-sosok bayangan berjalan tanpa tujuan.
+
+        Rafa menggenggam tangan Dika, bertekad melindunginya.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab6')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab8')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab8">
+      <h2>Bab 8: Jumpscare</h2>
+      <p>
+        Tiba-tiba, sebuah bayangan melompat dari sudut gelap, membuat mereka terkejut setengah mati. Suara jeritan memecah keheningan — meski mereka tidak bisa mengeluarkannya.
+
+        Namun, mereka tahu, ini adalah pertanda: sesuatu yang sangat jahat telah terbangun.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab7')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab9')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab9">
+      <h2>Bab 9: Melawan Keheningan</h2>
+      <p>
+        Rafa dan teman-temannya mulai melawan bayangan itu dengan segala cara. Mereka menyalakan lilin, membaca mantra, dan menaburkan garam.
+
+        Namun, bayangan itu tak bisa dilihat kecuali oleh mereka yang sudah terikat kutukan.
+
+        Berhasilkah mereka mengusirnya sebelum semuanya terlambat?
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab8')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab10')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab10">
+      <h2>Bab 10: Harapan Terakhir</h2>
+      <p>
+        Di ruang rahasia di bawah rumah, Rafa menemukan sebuah jimat yang diyakini bisa memutus kutukan.
+
+        Namun, harus ada pengorbanan besar untuk mengaktifkannya.
+
+        Siapa yang siap mempertaruhkan nyawanya demi suara dan jiwa yang hilang?
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab9')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab11')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab11">
+      <h2>Bab 11: Pengorbanan</h2>
+      <p>
+        Rafa rela mengorbankan dirinya. Ia mengucapkan mantra sambil menggenggam jimat erat.
+
+        Tubuhnya mulai memancarkan cahaya dan suara-suara hilang perlahan.
+
+        Namun, apakah ini akhir dari kutukan, atau permulaan yang lebih buruk?
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab10')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab12')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab12">
+      <h2>Bab 12: Kegelapan Baru</h2>
+      <p>
+        Setelah pengorbanan Rafa, rumah itu berubah.
+
+        Kegelapan baru muncul, lebih pekat dan menakutkan. Suara-suara mengerikan mulai menggema kembali, tapi kali ini lebih dekat, lebih nyata.
+
+        Teman-teman Rafa harus berhadapan dengan ancaman yang jauh lebih besar.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab11')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab13')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab13">
+      <h2>Bab 13: Pertarungan Terakhir</h2>
+      <p>
+        Lina dan Arman berjuang melawan kegelapan dengan semua kekuatan yang mereka miliki.
+
+        Mereka harus mencari cara lain untuk menyelamatkan jiwa Rafa dan mengakhiri kutukan.
+
+        Waktu terus berjalan, dan ancaman semakin mendekat.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab12')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab14')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab14">
+      <h2>Bab 14: Cahaya di Ujung Lorong</h2>
+      <p>
+        Sebuah cahaya kecil muncul di ujung lorong gelap. Itu adalah harapan terakhir mereka.
+
+        Mereka mengikuti cahaya itu, melewati lorong yang penuh bayangan dan suara-suara aneh.
+
+        Apakah ini jalan keluar, atau perangkap terakhir?
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab13')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab15')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab15">
+      <h2>Bab 15: Menembus Kegelapan</h2>
+      <p>
+        Dengan keberanian yang tersisa, mereka menembus kegelapan.
+
+        Cahaya semakin terang, suara mulai kembali, dan keheningan perlahan terpecah.
+
+        Namun, sebuah pengorbanan harus tetap dilakukan.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab14')">Bab Sebelumnya</button>
+        <button onclick="scrollToSection('bab16')">Bab Selanjutnya</button>
+      </div>
+    </section>
+
+    <section id="bab16">
+      <h2>Bab 16: Akhir dan Awal Baru</h2>
+      <p>
+        Rumah Tanpa Suara kini mulai bernyanyi kembali.
+
+        Jiwa-jiwa yang terperangkap dilepaskan, dan desa kecil itu kembali hidup dengan suara.
+
+        Rafa dan teman-temannya keluar dengan luka, tapi hati penuh harapan akan masa depan yang lebih terang.
+      </p>
+      <div class="btn-pindah">
+        <button onclick="scrollToSection('bab15')" style="margin-right: 10px;">Bab Sebelumnya</button>
+        <button disabled>Bab Selanjutnya</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Rumah Tanpa Suara</p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Contoh efek jumpscare sederhana
+    function showJumpscare() {
+      const js = document.getElementById('jumpscare');
+      js.style.display = 'block';
+      setTimeout(() => {
+        js.style.display = 'none';
+      }, 1500);
+    }
+
+    // Opsional: trigger jumpscare saat masuk Bab 8
+    document.getElementById('bab8').addEventListener('mouseenter', showJumpscare);
+  </script>
+
+</body>
+</html>
